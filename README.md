@@ -1,5 +1,36 @@
 # My CoderPad Challenge Solutions
 
+## Requirements
+- Sqlite3
+- Any other database system (please run the load-data script first!)
+
+## How to run
+The included database is preloaded with data to answer each of the questions.
+
+To run the code for each question:
+1. Active the sqlite3 shell and load the database
+  ```bash
+  sqlite3 coderpad_practice.db
+  ```
+2. Execute the SQL script for each question.
+  ```bash
+  .read <filename>
+  ```
+  For example:
+  ```bash
+  .read coderpad-sql-question_05.sql
+  ```
+
+If not using the included table, please do the following before the above steps:
+1. Create table
+  ```bash
+  sqlite3 <table_name>
+  ```
+2. Load required data
+  ```bash
+  .read coderpad-sql-load-data.sql
+  ```
+
 ## Question 1
 Given a table Employees(id, first_name, last_name, department, salary), write a query to return all employees in the ‘Engineering’ department earning more than 80,000, ordered by salary descending.
 
@@ -26,7 +57,7 @@ Result columns: customer_id, name, total_spent.
 
 
 ## Question 6
-Find the products with more than 5 items sold
+Find the products with more than 3 items sold
 
 
 ## Question 7
