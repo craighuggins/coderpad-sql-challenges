@@ -16,10 +16,14 @@ To run the code for each question:
   ```bash
   .read <filename>
   ```
-  For example:
+   For example:
+   ```bash
+   .read coderpad-sql-question_05.sql
+   ```
+3. Exit once completed
   ```bash
-  .read coderpad-sql-question_05.sql
-  ```
+  .quit
+  ``` 
 
 If not using the included table, please do the following before the above steps:
 1. Create table
